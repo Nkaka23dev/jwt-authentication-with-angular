@@ -1,0 +1,25 @@
+ <div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <label for="txtusername" class="form-label">Username</label>
+          <input type="email" class="form-control" id="txtusername"
+          [(ngModel)]="loginData.username"name="username" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="txtpasswod" class="form-label">Password</label>
+          <input type="password" name="password" [(ngModel)]="loginData.password" 
+          class="form-control" id="txtpasswod">
+        </div>
+        <!-- <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <button type="submit" (click)="userLogin()" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
